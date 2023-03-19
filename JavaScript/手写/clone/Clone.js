@@ -96,7 +96,7 @@ function DeepCloneV2(obj, cache = []) {
 
 	// 4. 循环引用问题
 	const item = cache.filter((item) => item.original === obj)[0];
-	if (item) return item;
+	if (item) return item.copy;
 
 	// 5. 判断属性值是 数组 还是 对象 类型
 	let copy = Object.isArray ? [] : {};
