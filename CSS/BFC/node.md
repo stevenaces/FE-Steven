@@ -10,5 +10,5 @@ BFC是一个独立的空间，里面子元素的渲染不影响外面的布局
 
 ### 如何触发BFC
 - `overflow: hidden`
-- `display: inline-block table-cell flex`
-- `position: absolute fixed`
+- `display: inline-block | table-cell | flex`
+- `position: absolute | fixed`

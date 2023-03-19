@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>清除浮动</title>
+		<style>
+			/* 清除浮动 方法二（常用） */
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			/* 理解clearfix原理，老式写法，但是对于div.content按意图显式有效，上面一种无效 */
+			/* .clear {
+				clear: both;
+			} */
+
+			.box {
+				/* 清除浮动 方法一 */
+				/* 1.1 */
+				/* overflow: hidden; */
+				/* 1.2 */
+				/* float: left; */
+				width: 500px;
+				margin: 50px auto;
+				border: 5px solid red;
+			}
+			.left {
+				float: left;
+				width: 200px;
+				height: 200px;
+				background-color: #ccc;
+			}
+			.content {
+				width: 200px;
+				height: 200px;
+				margin: 20px;
+				background-color: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box clearfix">
+			<div class="left">left</div>
+			<!-- <div class="clear"></div> -->
+			<div class="content">content</div>
+		</div>
+	</body>
+</html>
