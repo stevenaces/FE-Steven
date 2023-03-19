@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>浮动</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			section {
+				width: 200px;
+				height: 200px;
+				background-color: #ccc;
+
+				/* 为了显式父级box背景颜色 */
+				margin: 20px;
+			}
+
+			.box {
+				background-color: black;
+
+				/* 父级触发 BFC */
+				overflow: hidden;
+				/* display: inline-block / flex; */
+				/* position: absolute / fixed; */
+			}
+
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<section class="left">section1</section>
+			<section class="right">section2</section>
+		</div>
+	</body>
+</html>
