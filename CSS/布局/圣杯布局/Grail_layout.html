@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">#header</div>
+    <div id="container">
+        <div id="center" class="column">#center</div>
+        <div id="left" class="column">#left</div>
+        <div id="right" class="column">#right</div>
+    </div>
+    <div id="footer">#footer</div>
+
+</body>
+
+<style>
+    body {
+        min-width: 600px;
+    }
+
+    /* 先写好header和footer样式，使之横向撑满 */
+    #header,
+    #footer {
+        text-align: center;
+        height: 60px;
+        background: rgb(61, 61, 61);
+        clear: both;
+    }
+
+    #container {
+        padding: 0 200px;
+        overflow: hidden
+    }
+
+    /* 对列设置左浮动 */
+    .column {
+        height: 200px;
+        float: left;
+        position: relative;
+    }
+
+    #left {
+        width: 200px;
+        background-color: aqua;
+        margin-left: -100%;
+        left: -200px;
+    }
+
+    #right {
+        width: 200px;
+        background-color: wheat;
+        margin-left: -200px;
+        right: -200px;
+    }
+
+    #center {
+        width: 100%;
+        background-color: tomato;
+    }
+</style>
+
+</html>
