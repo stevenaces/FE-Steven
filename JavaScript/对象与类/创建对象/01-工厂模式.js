@@ -10,6 +10,8 @@ function createPerson(name, age, job) {
 	o.sayName = function () {
 		console.log(o.name);
 	};
+
+	return o
 }
 
 let person1 = createPerson("steven", 25, "frontend");
