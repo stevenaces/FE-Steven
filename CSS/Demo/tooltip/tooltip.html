@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tooltip</title>
+
+		<style>
+			.box {
+				width: 400px;
+				height: 400px;
+				background-color: aliceblue;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.content {
+				width: 100px;
+				height: 40px;
+				text-align: center;
+				line-height: 30px;
+				background-color: pink;
+				border-radius: 5px;
+				position: relative;
+			}
+
+			.content::after {
+				content: "tooltip";
+				width: 60px;
+				height: 30px;
+				color: white;
+				text-align: center;
+				line-height: 30px;
+				background-color: #000;
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, calc(-100% - 10px));
+				border-radius: 5px;
+			}
+			.content::before {
+				content: "";
+				width: 15px;
+				height: 15px;
+				background-color: #000;
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+			}
+			.content::before,
+			.content::after {
+				display: none;
+			}
+
+			.content:hover::before,
+			.content:hover::after {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 存在一个问题：当鼠标hover到content上时，会显示伪元素，但是如果想hover到伪元素上，让伪元素一直显示，不知道怎么写 -->
+		<div class="box">
+			<div class="content">按钮</div>
+		</div>
+	</body>
+</html>
