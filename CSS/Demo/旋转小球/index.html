@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>旋转小球</title>
+		<style>
+			.box {
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+				text-align: center;
+				color: white;
+				line-height: 200px;
+				background: #11445e;
+				border: 10px solid #00d9ff;
+				border-radius: 50%;
+				position: relative;
+
+				animation: round 3s infinite;
+			}
+			.box::before {
+				content: "";
+				width: 30px;
+				height: 30px;
+				background: rgb(255, 132, 0);
+				border-radius: 50%;
+
+				position: absolute;
+				top: 10px;
+				left: 10px;
+			}
+
+			@keyframes round {
+				0% {
+					rotate: 0deg;
+				}
+				100% {
+					rotate: 360deg;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">box</div>
+	</body>
+</html>
