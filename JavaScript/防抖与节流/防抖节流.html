@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>防抖与节流</title>
+	</head>
+	<body>
+		<input type="text" />
+		<script>
+			// 防抖
+			function Debounce(task, wait) {
+				let timer = null;
+				return function (...args) {
+					timer && clearTimeout(timer);
+
+					timer = setTimeout(() => {
+						task.apply(this, args);
+						timer = null;
+					}, wait);
+				};
+			}
+
+			// 节流
+			function Throttle(task, wait) {
+				let timer = null;
+				return function (...args) {
+					if (!timer) {
+						const ret = task.apply(this, args);
+						timer = setTimeout(() => {
+							timer = null;
+						}, wait);
+						return ret;
+					}
+				};
+			}
+
+			let input = document.querySelector("input");
+
+			// 异步任务
+			function ajaxTask(content) {
+				console.log(`Ajax request params: ${content}`);
+			}
+
+			let inputDebounce = Debounce(ajaxTask, 1000);
+			let inputThrottle = Throttle(ajaxTask, 1000);
+
+			input.addEventListener("keyup", (e) => {
+				inputThrottle(e.target.value);
+			});
+		</script>
+	</body>
+</html>
