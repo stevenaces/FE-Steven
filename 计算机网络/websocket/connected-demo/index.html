@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>websocket demo</title>
+	</head>
+	<body>
+		<script>
+			const ws = new WebSocket("ws://localhost:3000");
+
+			ws.addEventListener("open", () => {
+				console.log("连接上服务器了");
+				ws.send("床前明月光，疑是地上霜；");
+			});
+
+			ws.addEventListener("message", ({ data }) => {
+				console.log(data);
+			});
+		</script>
+	</body>
+</html>
