@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>过渡 Demo</title>
+
+		<style>
+			.outer {
+				width: 769px;
+				height: 500px;
+				position: relative;
+				overflow: hidden;
+			}
+			img {
+				transition: 1s linear all;
+			}
+			.mask {
+				width: 769px;
+				height: 500px;
+				opacity: 0;
+				background-color: black;
+				color: white;
+				font-size: 100px;
+				text-align: center;
+				line-height: 500px;
+
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				transition: 1s linear all;
+			}
+
+			.outer:hover {
+				box-shadow: 0 0 10px;
+			}
+			.outer:hover .mask {
+				opacity: 0.5;
+			}
+			.outer:hover img {
+				transform: scale(1.6) rotate(20deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<img src="./shanghai.webp" alt="上海" />
+			<div class="mask">上海</div>
+		</div>
+	</body>
+</html>
