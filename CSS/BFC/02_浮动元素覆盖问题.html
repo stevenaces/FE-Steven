@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>浮动元素覆盖问题</title>
+		<style>
+			.box {
+				width: 100px;
+				height: 100px;
+			}
+			.box1 {
+				/* 该元素浮动了，导致box2会被box1盖住 */
+				float: left;
+				background-color: orange;
+			}
+			.box2 {
+				background-color: deepskyblue;
+
+				/* 开启BFC */
+				/* float: left; */
+				/* position: absolute; */
+				/* display: inline-block; */
+				/* display: table; */
+				/* overflow: hidden; */
+				display: flow-root;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+	</body>
+</html>

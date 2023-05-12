@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷</title>
+    <style>
+        /* 来源：https://juejin.cn/post/6950082193632788493  */
+        .box {
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+        }
+        .container {
+            background: #000;
+
+            /* 使用以下几个属性，使得 container 成为BFC */
+            display: inline-block;
+            /* 
+            overflow: hidden | auto;
+            display: table-cell ｜ inline-block ｜  flex;
+            position: absolute | fixed;
+            */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
