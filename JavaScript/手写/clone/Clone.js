@@ -49,7 +49,7 @@ var $obj = {
 $obj.c.d = $obj;
 
 // JSON版本
-// 存在问题：会忽略 undefined, symbol; 不能序列号函数，不能解决循环引用问题，不能正确处理 Date, RegExp, Error对象
+// 存在问题：会忽略 undefined, symbol; 不能序列化函数，不能解决循环引用问题，不能正确处理 Date, RegExp, Error对象
 const clone$Obj = JSON.parse(JSON.stringify($obj));
 
 /**
@@ -104,7 +104,7 @@ function DeepCloneV2(obj, cache = []) {
 
 	// 6. 递归拷贝
 	Object.keys[obj].forEach((key) => {
-		copy[value] = DeepCloneV2(obj[key], cache);
+		copy[key] = DeepCloneV2(obj[key], cache);
 	});
 
 	return copy;
