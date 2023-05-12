@@ -120,9 +120,13 @@ btn.addEventListener('click', (event) => {
 
 **H5事件**
 - beforeunload: 用意是给开发者提供阻止页面被卸载的机会。
-- DOMContentLoaded: DOM树构建完成后立即触发，不用等待图片、js、css等其他资源加载完成。
+- **`DOMContentLoaded`**: DOM树构建完成后立即触发，不用等待图片、js、css等其他资源加载完成。（Vue hash模式原理中，可以利用这个事件第一次触发 hashchange工具函数）
 - readystatechange
 - pageshow/pagehide
+- **`hashchange`**: 用于在URL散列值（URL最后`#`后面的部分）发生改变时通知开发者。
+  - 这个事件必须添加给`window`；
+  - 可以通过`event.oldURL / event.newURL`分别获取变化前后的URL；
+  - 如果想要拿到`#`后面的散列值，可以通过`location.hash`获得。
 
 ### 事件委托
 问题：
