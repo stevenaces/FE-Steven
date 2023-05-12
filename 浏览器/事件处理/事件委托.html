@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>事件委托Demo</title>
+	</head>
+	<body>
+		<ul id="myLinks">
+			<li id="go">Go somewhere</li>
+			<li id="do">Do something</li>
+			<li id="sayHi">Say Hi</li>
+		</ul>
+
+		<script>
+			// 利用事件委托绑定事件处理程序和处理不同行为
+			let list = document.getElementById("myLinks");
+			list.addEventListener("click", (event) => {
+				let target = event.target;
+
+				switch (target.id) {
+					case "do":
+						document.title = "I changed the document's title";
+						break;
+					case "go":
+						location.href = "https://www.xxx.com";
+						break;
+					case "sayHi":
+						console.log("hi");
+						break;
+				}
+			});
+		</script>
+	</body>
+</html>
