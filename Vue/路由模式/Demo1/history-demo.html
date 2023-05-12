@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>History Demo</title>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li><a href="/page1">page1</a></li>
+				<li><a href="/page2">page2</a></li>
+			</ul>
+		</div>
+
+		<!-- 渲染对应组件的地方 -->
+		<div id="route-view"></div>
+
+		<script>
+			window.addEventListener("DOMContentLoaded", Load);
+			// window.addEventListener("popstate", PopChange);
+
+			let routeView = null;
+
+			function Load() {
+				routeView = document.getElementById("route-view");
+
+				// 默认执行一次 popstate 的回调函数，匹配一次页面组件
+				PopChange();
+
+				// 获取所有带 href 属性的 a 标签节点
+				let aList = document.querySelectorAll("a[href]");
+
+				// 遍历 a 标签节点数组，阻止默认事件，添加点击事件回调函数
+				aList.forEach((aNode) => {
+					aNode.addEventListener("click", function (e) {
+						// 阻止 a 标签的默认事件
+						e.preventDefault();
+
+						let href = aNode.getAttribute("href");
+
+						// 通过 history.pushState 手动修改地址栏
+						history.pushState({ id: href }, "", href);
+
+						// popState 是监听不到地址栏的变化，所以此处需要手动执行回调函数 popChange
+						PopChange();
+					});
+				});
+			}
+
+			function PopChange() {
+				console.log("location", location.href);
+
+				switch (location.pathname) {
+					case "/page1":
+						routeView.innerHTML = "page1";
+						break;
+					case "/page2":
+						routeView.innerHTML = "page2";
+						break;
+					default:
+						routeView.innerHTML = "page1";
+				}
+			}
+		</script>
+	</body>
+</html>

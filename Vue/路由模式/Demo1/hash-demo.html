@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hash Demo</title>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li><a href="#/page1">page1</a></li>
+				<li><a href="#/page2">page2</a></li>
+			</ul>
+		</div>
+
+		<!-- 渲染对应组件的地方 -->
+		<div id="route-view"></div>
+
+		<script>
+			// 第一次加载的时候，不会执行 hashchange 监听事件，默认执行一次
+			// DOMContentLoaded 为浏览器 DOM 加载完成时触发
+
+			window.addEventListener("DOMContentLoaded", Load);
+			window.addEventListener("hashchange", HashChange);
+
+			// 展示页面组件的节点
+			let routeView = null;
+
+			function Load() {
+				routeView = document.getElementById("route-view");
+				HashChange();
+			}
+
+			function HashChange() {
+				// 每次触发 hashchange 事件，通过 location.hash 拿到当前浏览器地址 hash 值
+				console.log("触发了 hashchange 事件");
+				// 根据不同的路径展示不同的内容
+				switch (location.hash) {
+					case "#/page1":
+						console.log(`location.hash: ${location.hash}`);
+						routeView.innerHTML = "page1";
+						break;
+					case "#/page2":
+						console.log(`location.hash: ${location.hash}`);
+						routeView.innerHTML = "page2";
+						break;
+					default:
+						console.log(`location.hash: ${location.hash}`);
+						routeView.innerHTML = "page1";
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

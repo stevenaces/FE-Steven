@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hash Route demo</title>
+	</head>
+	<body>
+		<header>
+			<a href="#p1">前往段落1</a>
+			<a href="#p2">前往段落2</a>
+			<a href="#p3">前往段落3</a>
+		</header>
+		<main>
+			<div id="content">这是首页</div>
+		</main>
+
+		<script>
+			const routerMap = {
+				"#p1": () => {
+					document.getElementById("content").innerHTML = "这是段落1内容";
+				},
+				"#p2": () => {
+					document.getElementById("content").innerHTML = "这是段落2内容";
+				},
+				"#p3": () => {
+					document.getElementById("content").innerHTML = "这是段落3内容";
+				},
+			};
+
+			const handleRouter = () => {
+				const hash = location.hash || location.href;
+				routerMap[hash] && routerMap[hash]();
+			};
+
+			window.addEventListener("DOMContentLoaded", handleRouter);
+			window.addEventListener("hashchange", handleRouter);
+		</script>
+	</body>
+</html>

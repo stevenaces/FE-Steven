@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>history route demo</title>
+	</head>
+	<body>
+		<header>
+			<a href="/p1">前往段落1</a>
+			<a href="/p2">前往段落2</a>
+			<a href="/p3">前往段落3</a>
+		</header>
+		<main>
+			<div id="content">这是首页</div>
+		</main>
+
+		<script>
+			const routerMap = {
+				"/p1": () => {
+					document.getElementById("content").innerHTML = "这是段落1内容";
+				},
+				"/p2": () => {
+					document.getElementById("content").innerHTML = "这是段落2内容";
+				},
+				"/p3": () => {
+					document.getElementById("content").innerHTML = "这是段落3内容";
+				},
+				default: () => {
+					document.getElementById("content").innerHTML = "这是首页";
+				},
+			};
+
+			// const Load = () => {
+			// 	let aList = document.querySelectorAll("a");
+			// 	aList.forEach((aNode) => {
+			// 		aNode.addEventListener("click", (e) => {
+			// 			e.preventDefault();
+
+			// 			const href = aNode.getAttribute("href");
+
+			// 			history.pushState({ href }, "", href);
+
+			// 			PopChange({ state: { href } });
+			// 		});
+			// 	});
+			// };
+
+			// 使用事件委托的形式，避免为每个 a 标签绑定事件
+			const Load = () =>
+				document.addEventListener("click", (e) => {
+					if (e.target.tagName !== "A") return;
+
+					e.preventDefault();
+
+					const href = e.target.getAttribute("href");
+
+					history.pushState({ href }, "", href);
+
+					PopChange({ state: { href } });
+				});
+
+			const PopChange = (e) => {
+				console.log(e);
+				const href = e.state.href;
+				routerMap[href]?.();
+			};
+
+			window.addEventListener("DOMContentLoaded", Load);
+			window.addEventListener("popstate", PopChange);
+		</script>
+	</body>
+</html>
