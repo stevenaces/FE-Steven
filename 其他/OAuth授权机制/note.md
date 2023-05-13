@@ -1,14 +1,16 @@
 ## OAuth2.0
 
-本文首先给出三个链接，但是在阅读这三个链接前，还是建议你阅读一下这篇文章的内容；内容并不长，而且将你的身份进行了约束，这样在阅读的时候会很清晰。例如下面第二个链接中 `A.com`和`B.com`都是谁，在你还是个小白或者第一次接触这个概念的时候，肯定会不清晰。
+本文首先给出四个链接，但是在阅读这四个链接前，还是建议你阅读一下这篇文章的内容；内容并不长，而且将你的身份进行了约束，这样在阅读的时候会很清晰。例如下面第二个链接中 `A.com`和`B.com`都是谁，在你还是个小白或者第一次接触这个概念的时候，肯定会不清晰。
 
-如果你迫不及待的想要阅读下面三篇文章，现在也可以提前告诉你，`A.com`可以理解为是你作为普通开发者正在开发的网站，`B.com`是你想要接入的平台，例如微信平台。
+如果你迫不及待的想要阅读下面四篇文章，现在也可以提前告诉你，第二篇文章中的`A.com`可以理解为是你作为普通开发者正在开发的网站，`B.com`是你想要接入的平台，例如微信平台。
 
-> [阮一峰讲OAuth2.0-简单解释](https://www.ruanyifeng.com/blog/2019/04/oauth_design.html)
+> 1. [阮一峰讲OAuth2.0-简单解释](https://www.ruanyifeng.com/blog/2019/04/oauth_design.html)
 > 
-> [阮一峰讲OAuth2.0-四种授权方式](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
+> 2. [阮一峰讲OAuth2.0-四种授权方式](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
 >
-> [阮一峰讲OAuth2.0-GitHub OAuth 第三方登录示例教程](https://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
+> 3. [阮一峰讲OAuth2.0-GitHub OAuth 第三方登录示例教程](https://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
+>
+> 4. [知乎一个回答，通过画请求顺序理解OAuth](https://zhuanlan.zhihu.com/p/509212673)
 
 ### 通过一个小功能了解 OAuth2.0 思想
 
