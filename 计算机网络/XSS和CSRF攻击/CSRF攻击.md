@@ -1,3 +1,5 @@
+> [B站up讲解CSRF](https://www.bilibili.com/video/BV1iW411171s/?spm_id_from=333.788.recommend_more_video.2&vd_source=2dd02d64c29ab7eefcc5106eb9b51955)
+
 ## CSRF 攻击
 
 不法分子获取用户的登录状态信息，通过伪造一些恶意请求，从而使用户利益受损。
