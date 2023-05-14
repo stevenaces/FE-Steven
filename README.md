@@ -3,8 +3,6 @@ Steven xie的前端笔记库
 
 ## 目录
 
-> 目录正在完善中...，目前内容大于目录
-
 ### JavaScript
 - 对象与类
   - [创建对象四种方式](./JavaScript/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%B1%BB/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/)
