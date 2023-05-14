@@ -7,7 +7,10 @@ Steven xie的前端笔记库
 - 对象与类
   - [创建对象四种方式](./JavaScript/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%B1%BB/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1/)
   - [对象继承](./JavaScript/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%B1%BB/%E5%AF%B9%E8%B1%A1%E7%BB%A7%E6%89%BF/)
-- [防抖与节流](./JavaScript/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/)
+- decorator
+  - [函数只执行一次](./JavaScript/decorator/%E5%87%BD%E6%95%B0%E5%8F%AA%E6%89%A7%E8%A1%8C%E4%B8%80%E6%AC%A1/)
+  - [防抖与节流](./JavaScript/%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/)
+  - [函数拦截器](./JavaScript/decorator/%E5%87%BD%E6%95%B0%E6%8B%A6%E6%88%AA%E5%99%A8/)
 - 设计模式
   - [单例模式](./JavaScript/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/)
   - [观察者模式](./JavaScript/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/)
