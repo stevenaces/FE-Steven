@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reactive 响应式</title>
+	</head>
+	<body>
+		<script src="./reactive.js"></script>
+		<script>
+			const info = reactive({ counter: 101, name: "why" });
+			const foo = reactive({ height: 1.88 });
+
+			// Effect1
+			watchEffect(function () {
+				console.log(
+					"Effect1 info.counter, info.name:",
+					info.counter * 2,
+					info.name
+				);
+			});
+
+			// Effect2
+			watchEffect(function () {
+				console.log(
+					"Effect2 info.counter, info.name:",
+					info.counter ** 2,
+					info.name
+				);
+			});
+
+			// Effect3
+			watchEffect(function () {
+				console.log("Effect3 info.name:", info.name);
+			});
+
+			// Effect4
+			watchEffect(function () {
+				console.log("Effect4 foo.height:", foo.height);
+			});
+
+			info.counter++;
+			info.name = "lilei";
+			foo.height = 1.8;
+		</script>
+	</body>
+</html>
