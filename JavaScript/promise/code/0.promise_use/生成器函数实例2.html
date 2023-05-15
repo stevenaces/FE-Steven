@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>生成器函数实例2</title>
+	</head>
+	<body>
+		<script>
+			function getUser() {
+				setTimeout(() => {
+					data = "用户信息";
+					iterator.next(data);
+				}, 1000);
+			}
+			function getOder() {
+				setTimeout(() => {
+					data = "订单信息";
+					iterator.next(data);
+				}, 1000);
+			}
+			function getGoods() {
+				setTimeout(() => {
+					data = "商品信息";
+					iterator.next(data);
+				}, 1000);
+			}
+
+			function* gen() {
+				let data = yield getOder();
+				console.log(data);
+				data = yield getUser();
+				console.log(data);
+				data = yield getGoods();
+				console.log(data);
+			}
+			let iterator = gen();
+			iterator.next();
+		</script>
+	</body>
+</html>

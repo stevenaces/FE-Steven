@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>生成器函数实例</title>
+	</head>
+	<body>
+		<script>
+			// 回调地狱
+			// setTimeout(() => {
+			//     console.log("111")
+			//     setTimeout(() => {
+			//         console.log("222")
+			//         setTimeout(() => {
+			//             console.log("333")
+			//         }, 3000);
+			//     }, 2000);
+			// }, 1000);
+
+			// 使用生成器解决回调地狱
+			function one() {
+				setTimeout(() => {
+					console.log("111");
+					iterator.next();
+				}, 1000);
+			}
+
+			function two() {
+				setTimeout(() => {
+					console.log("222");
+					iterator.next();
+				}, 2000);
+			}
+
+			function three() {
+				setTimeout(() => {
+					console.log("333");
+					iterator.next();
+				}, 3000);
+			}
+
+			// function one1(){
+			//     console.log('111')
+			//     iterator.next()
+			// }
+			// function two1(){
+			//     console.log('111')
+			//     iterator.next()
+			// }
+			// function three1(){
+			//     console.log('111')
+			//     iterator.next()
+			// }
+
+			function* gen() {
+				yield one();
+				yield two();
+				yield three();
+			}
+
+			let iterator = gen();
+			iterator.next();
+		</script>
+	</body>
+</html>

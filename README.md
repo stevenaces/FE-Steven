@@ -18,6 +18,7 @@ Steven xie的前端笔记库
 - [this](./JavaScript/this/)
 - 迭代器与生成器
   - [迭代器](./JavaScript/%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/%E8%BF%AD%E4%BB%A3%E5%99%A8/)
+- [Promise理解与实现](./JavaScript/promise/)
 - 有意思的面试题
   - [类的链式调用](./JavaScript/%E9%9D%A2%E8%AF%95%E9%A2%98/%E7%B1%BB%E7%9A%84%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/)
 

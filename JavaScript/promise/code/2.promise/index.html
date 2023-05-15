@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise封装 | 1 - 初始结构搭建</title>
+    <script src="./promise.js"></script>
+</head>
+<body>
+    <script>
+        /* 
+            Promise 关键问题
+            1. 如何修改对象状态
+            2. 能否执行多个回调
+            3. 改变状态与指定回调的顺序问题
+            4. then 方法返回结果由什么决定
+            5. 串联多个任务
+            6. 异常穿透
+            7. 如何中断 promise 链
+            */
+
+            /* 
+            Promise 自定义封装
+            1. 初始结构构建
+            2. resolve 与 reject 结构构建
+            3. resolve 与 reject 代码实现
+            4. throw 抛出异常改变状态
+            5. promise 对象状态只能改变一次
+            6. then 方法执行回调
+            7. 异步任务回调的执行
+            8. 指定多个回调的实现
+            9. 同步修改状态 then 方法结果返回
+            10.异步修改状态 then 方法结果返回
+            11.then 方法完善与优化
+            12.catch 方法
+            13.resolve 方法
+            14.reject 方法
+            15.all 方法
+            16.race 方法
+            17.then 方法回调的异步执行
+        */
+        let p = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve('OK')
+            }, 1000);
+            // resolve('OK')
+            // reject('error')
+            // throw 'error'
+        })
+        // console.log(p)
+
+        let res = p.then(value=>{
+            console.log(value)
+        }, reason=>{
+            console.warn(reason)
+        })
+
+        console.log(res)
+        
+    </script>
+</body>
+</html>

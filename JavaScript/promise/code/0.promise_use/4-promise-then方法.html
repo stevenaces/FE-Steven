@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>4-promise-then方法</title>
+	</head>
+	<body>
+		<script>
+			const p = new Promise((resolve, reject) => {
+				setTimeout(() => {
+					// 异步任务成功
+					resolve("从数据库返回来的数据");
+				}, 1000);
+			});
+
+			let result = p.then(
+				(value) => {
+					console.log(value);
+					// 1. 如果没有返回值，result 为成功，值为undefined
+
+					// 2. 如果返回值为非 Promise 对象, result为成功，值为return值
+					// return 'iloveyou'
+
+					// 3. 如果返回值为 Promise 对象, result状态为 Promise 任务执行后的状态
+					/* return new Promise((resolve, reject)=>{
+                // 成功
+                resolve("内部异步任务执行成功了")
+                // 失败
+                // reject("内部任务执行失败了")
+            }) */
+
+					// 4. 如果抛出错误，result状态为 reject
+					throw "出错了";
+				},
+				(err) => {
+					console.error(err);
+				}
+			);
+			console.log(result);
+
+			p.then((value) => {
+				console.log("first then", value);
+			}).then((value) => {
+				console.log("second then", value);
+			});
+		</script>
+	</body>
+</html>

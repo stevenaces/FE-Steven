@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>promise基本语法</title>
+	</head>
+	<body>
+		<script>
+			// 实例化 Promise 对象
+			let p = new Promise(function (resolve, reject) {
+				setTimeout(() => {
+					// 异步任务成功获取到数据库中的数据
+					// let data = "数据库中的数据"
+					// resolve(data)
+
+					// 异步任务失败，没有获取到数据库中的数据
+					let err = "数据获取失败";
+					reject(err);
+				}, 1000);
+			});
+
+			p.then(
+				function (value) {
+					console.log(value);
+				},
+				function (reason) {
+					console.log(reason);
+				}
+			);
+		</script>
+	</body>
+</html>

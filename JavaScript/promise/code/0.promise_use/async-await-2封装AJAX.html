@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			function sendAJAX(url){
+				return new Promise((resolve, reject)=>{
+					// 1.定义对象
+					const x = XMLHttpRequest();
+					// 2.初始化
+					x.open('Get', url)
+					// 3.发送
+					x.send()
+					// 4.处理响应
+					x.onreadystatechange() = function(){
+						if(x.readyState === 4){
+							if(x.status >= 200 && x.status){
+									resolve(x.response)
+							}else{
+									reject(x.status)
+							}
+						}
+					}
+				})
+			}
+
+			// Promise then 方法处理请求
+			sendAJAX("xxx").then(value=>{console.log(value)}, reason=>{console.warn(reason)})
+
+			// async await 方法处理请求
+			// 以后结合 axios 简直不要太方便，因为 axios 返回的就是 Promise 对象，但是注意，await只能返回成功的结果，对于失败的结果是捕获不到的，需要再结合 try...catch() 处理。
+			async function handle(){
+			    let result = await sendAJAX('xxx')
+			}
+		</script>
+	</body>
+</html>

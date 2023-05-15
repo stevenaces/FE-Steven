@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>promise</title>
+</head>
+<body>
+  <script>
+    let p = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('error!');
+      }, 1000);
+    });
+
+    // p.then(value => {
+    //   console.log('then 1 value');
+    // }, error => {
+    //   console.log('then 1 err');
+    // }).then(value => {
+    //   console.log('then 2 value');
+    // }, error => {
+    //   console.log('then 2 error');
+    // }).then(value => {
+    //   console.log('then 3 value');
+    // }, error => {
+    //   console.log('then 3 error');
+    // }).catch(err => {
+    //   console.log('catch err');
+    // });
+
+    p.then(value => {
+      console.log('then 1 value');
+    }).then(value => {
+      console.log('then 2 value');
+      throw 'then 2 throw'
+    }).then(value => {
+      console.log('then 3 value');
+    }, err => {
+      console.log('then 2 error')
+    }).catch(err => {
+      console.log('catch err');
+    });
+
+    console.log('-------------------------------');
+
+    function task(){
+    let num = Math.random();
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if(num > 0.8){
+            resolve(num);
+          }else{
+            reject(num);
+          }
+        }, 1000);
+      });
+    }
+
+    Promise.retry = function(fn, times){
+      return new Promise(async (resolve, reject) => {
+        let tryTimes = 1;
+        while(tryTimes <= times){
+          try {
+            const res = await fn();
+            console.log(`第 ${tryTimes} 尝试成功，结果为 ${res}`);
+            resolve(res);
+            break;
+          }catch (e){
+            console.log(`第 ${tryTimes} 尝试失败，结果为 ${e}`);
+            if(tryTimes === times){
+              console.log(`${tryTimes}次尝试都失败了！`);
+              reject(e);
+            }
+          }
+          tryTimes += 1;
+        }
+      })
+    }
+
+    let p1 = new Promise.retry(task, 3);
+
+  </script>
+</body>
+</html>
