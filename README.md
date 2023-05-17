@@ -32,6 +32,11 @@ Steven xie的前端笔记库
   - [渲染器简单实现](./Vue/%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/01%E6%B8%B2%E6%9F%93%E5%99%A8%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/): `h()`, `mount()`, `patch()`
   - [Vue2/3响应式系统简单实现](./Vue/%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/02%E5%93%8D%E5%BA%94%E5%BC%8F%E7%B3%BB%E7%BB%9F/): note.md还没好好总结，有时间再填
 
+### CSS
+- [过渡Demo](./CSS/%E8%BF%87%E6%B8%A1/index.html)
+- [动画Demo](./CSS/%E5%8A%A8%E7%94%BB/index.html)
+- [CSS小游戏](./CSS/CSS%E5%B0%8F%E6%B8%B8%E6%88%8F/README.md)：通过写css代码通过的一些小游戏
+
 ### 计算机网络
 - [websocket](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/websocket/)：目前主要总结了`连接和响应过程`，`心跳机制`还未总结；
 - [XSS攻击](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/XSS%E5%92%8CCSRF%E6%94%BB%E5%87%BB/XSS%E6%94%BB%E5%87%BB.md)
