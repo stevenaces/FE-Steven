@@ -24,7 +24,7 @@ Steven xie的前端笔记库
 
 ### TypeScript
 - [神光的TypeScript小册](./TypeScript/%E7%A5%9E%E5%85%89%E5%B0%8F%E5%86%8C/)
-- [类型体操做题题集](./TypeScript/tdl-ts/)
+- [类型体操做题题集](./TypeScript/tdl-ts/README.md)
 
 ### Vue
 - [两种路由模式](./Vue/%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%BC%8F)
