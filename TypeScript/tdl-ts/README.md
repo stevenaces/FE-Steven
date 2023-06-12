@@ -72,11 +72,11 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/02946-medium-objectentries/README.md" target="_blank"><img src="https://img.shields.io/badge/-2946%E3%83%BBObjectEntries-d9901a" alt="2946・ObjectEntries"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03062-medium-shift/README.md" target="_blank"><img src="https://img.shields.io/badge/-3062%E3%83%BBShift-d9901a" alt="3062・Shift"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03188-medium-tuple-to-nested-object/README.md" target="_blank"><img src="https://img.shields.io/badge/-3188%E3%83%BBTuple%20to%20Nested%20Object-d9901a" alt="3188・Tuple to Nested Object"/></a> 
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03192-medium-reverse/README.md" target="_blank"><img src="https://img.shields.io/badge/-3192%E3%83%BBReverse-d9901a" alt="3192・Reverse"/></a> 
 
 ## 🤔 UnPassed Challenges
 >  Trying by **order**
 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03192-medium-reverse/README.md" target="_blank"><img src="https://img.shields.io/badge/-3192%E3%83%BBReverse-d9901a" alt="3192・Reverse"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03196-medium-flip-arguments/README.md" target="_blank"><img src="https://img.shields.io/badge/-3196%E3%83%BBFlip%20Arguments-d9901a" alt="3196・Flip Arguments"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03243-medium-flattendepth/README.md" target="_blank"><img src="https://img.shields.io/badge/-3243%E3%83%BBFlattenDepth-d9901a" alt="3243・FlattenDepth"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03326-medium-bem-style-string/README.md" target="_blank"><img src="https://img.shields.io/badge/-3326%E3%83%BBBEM%20style%20string-d9901a" alt="3326・BEM style string"/></a>
