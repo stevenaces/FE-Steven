@@ -36,6 +36,7 @@ Steven xie的前端笔记库
 - [过渡Demo](./CSS/%E8%BF%87%E6%B8%A1/index.html)
 - [动画Demo](./CSS/%E5%8A%A8%E7%94%BB/index.html)
 - [CSS小游戏](./CSS/CSS%E5%B0%8F%E6%B8%B8%E6%88%8F/README.md)：通过写css代码通过的一些小游戏
+- [BFC](./CSS/BFC/README.md)
 
 ### 计算机网络
 - [websocket](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/websocket/)：目前主要总结了`连接和响应过程`，`心跳机制`还未总结；
