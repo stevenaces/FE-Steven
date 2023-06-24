@@ -36,13 +36,15 @@ Steven xie的前端笔记库
 - [过渡Demo](./CSS/%E8%BF%87%E6%B8%A1/index.html)
 - [动画Demo](./CSS/%E5%8A%A8%E7%94%BB/index.html)
 - [CSS小游戏](./CSS/CSS%E5%B0%8F%E6%B8%B8%E6%88%8F/README.md)：通过写css代码通过的一些小游戏
+- [BFC](./CSS/BFC/README.md)
 
 ### 计算机网络
 - [websocket](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/websocket/)：目前主要总结了`连接和响应过程`，`心跳机制`还未总结；
 - [XSS攻击](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/XSS%E5%92%8CCSRF%E6%94%BB%E5%87%BB/XSS%E6%94%BB%E5%87%BB.md)
 - [CSRF攻击](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/XSS%E5%92%8CCSRF%E6%94%BB%E5%87%BB/CSRF%E6%94%BB%E5%87%BB.md)
 - [DNS协议](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS%E5%8D%8F%E8%AE%AE.md)
-- [HTTPS协议](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTPS%E5%8D%8F%E8%AE%AE.md)
+- [HTTP协议](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP/README.md)
+- [HTTPS协议](./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTPS/README.md)
 
 ### 浏览器
 - 跨域
@@ -57,3 +59,4 @@ Steven xie的前端笔记库
 ### 其他
 - [OAuth2.0授权机制](./%E5%85%B6%E4%BB%96/OAuth%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6/)
 - [提升模块设计能力](./%E5%85%B6%E4%BB%96/%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1%E8%83%BD%E5%8A%9B/)
+- [阮一峰专栏](./%E5%85%B6%E4%BB%96/%E9%98%AE%E4%B8%80%E5%B3%B0%E4%B8%93%E6%A0%8F%E6%96%87%E7%AB%A0%E8%AE%B0%E5%BD%95/README.md)

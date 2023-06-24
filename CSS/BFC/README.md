@@ -21,7 +21,7 @@ BFC是一个独立的空间，里面子元素的渲染不影响外面的布局
 - 伸缩项目
 - 多列容器
 - column-span为1的元素（即使该元素没有包裹在多列容器中）
-- display的值，设置为`f1ow-root`
+- display的值，设置为`flow-root`
 
 ### 如何触发BFC
 - `overflow: hidden`
