@@ -27,6 +27,8 @@ Steven xie的前端笔记库
 - [类型体操做题题集](./TypeScript/tdl-ts/README.md)
 
 ### Vue
+- [封装例子]
+  - [mapState-mapGetters的封装](./Vue/%E5%B0%81%E8%A3%85%E4%BE%8B%E5%AD%90/mapState-mapGetters%E7%9A%84%E5%B0%81%E8%A3%85/README.md)
 - [两种路由模式](./Vue/%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%BC%8F)
 - 框架理解
   - [渲染器简单实现](./Vue/%E6%A1%86%E6%9E%B6%E7%90%86%E8%A7%A3/01%E6%B8%B2%E6%9F%93%E5%99%A8%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/): `h()`, `mount()`, `patch()`
