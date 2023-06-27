@@ -5,6 +5,7 @@
 - mapState/mapGetters在Vue3的 composition API中的使用与存在的问题
 - 在composition API中对这mapState/mapGetters进行封装
 - 封装后文件组织规范
+- 多模块store封装的完善
 
 ### 0. 预设Store
 为了叙述方便，假设现在有如下store:
@@ -269,6 +270,56 @@ function useGetters(mapper) {
 }
 ```
 
-### 封装后文件组织规范
+### 4. 封装后文件组织规范
 上一节对`mapState/mapGetters`进行了良好的封装，但是是写在一个文件中。如果为了内容组织清晰，还可以对上述封装进行分文件组织，组织方式可如当前目录下的 [`hooks`目录](./hooks/)。
 
+
+### 5. 多模块store封装的完善
+上面的封装，都是针对项目里只有一个store模块的情况，但是随着项目的复杂度增加，就有必要在项目中对store进行多个模块划分，那上述封装就不能适应这种情况了。为此，需要进行完善，可以借助[`createNamespaceHelpers`](https://vuex.vuejs.org/zh/api/#createnamespacedhelpers)这个API，它接收一个`moduleName`，返回对应module的map系列函数对象。
+
+**完善后的代码：**
+
+```javascript
+import { computed } from 'vue';
+import { useStore, mapState, mapGetters, createNamespaceHelpers } from 'vuex';
+
+/* 抽离核心逻辑 */
+function useMapper(mapper, mapFn){
+  // 拿到store实例
+	const store = useStore();
+
+	// 获取到对应对象的function
+	const storeDateFns = mapFn(mapper);
+
+  // 对数据进行转换
+	const storeDate = {};
+	Object.keys(storeDateFns).forEach((fnKey) => {
+		const fn = storeDateFns[fnKey].bind({ $store: store });
+		storeDate[fnKey] = computed(fn);
+	});
+
+	return storeDate;
+}
+
+// 封装 mapState
+function useState(moduleName, mapper) {
+  let mapFn = mapState;
+  
+  // 判断是否是其它模块
+  if(typeof moduleName === 'string' && moduleName.length > 0){
+    mapFn = createNamespaceHelpers(moduleName).mapState
+  }
+  return useMapper(mapper, mapFn);
+}
+
+// 封装 mapGetters
+function useGetters(moduleName, mapper) {
+  let mapFn = mapGetters;
+  
+  // 判断是否是其它模块
+  if(typeof moduleName === 'string' && moduleName.length > 0){
+    mapFn = createNamespaceHelpers(moduleName).mapGetters
+  }
+  return useMapper(mapper, mapFn);
+}
+```
