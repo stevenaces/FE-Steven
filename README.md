@@ -16,6 +16,7 @@ Steven xie的前端笔记库
   - [观察者模式](./JavaScript/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/)
   - [订阅与发布模式](./JavaScript/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F/)
 - [this](./JavaScript/this/)
+- [闭包](./JavaScript/%E9%97%AD%E5%8C%85/README.md)
 - 迭代器与生成器
   - [迭代器](./JavaScript/%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%B8%8E%E7%94%9F%E6%88%90%E5%99%A8/%E8%BF%AD%E4%BB%A3%E5%99%A8/)
 - [Promise理解与实现](./JavaScript/promise/)
