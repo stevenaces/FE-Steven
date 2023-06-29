@@ -79,11 +79,11 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/03376-medium-inordertraversal/README.md" target="_blank"><img src="https://img.shields.io/badge/-3376%E3%83%BBInorderTraversal-d9901a" alt="3376・InorderTraversal"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04179-medium-flip/README.md" target="_blank"><img src="https://img.shields.io/badge/-4179%E3%83%BBFlip-d9901a" alt="4179・Flip"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04182-medium-fibonacci-sequence/README.md" target="_blank"><img src="https://img.shields.io/badge/-4182%E3%83%BBFibonacci%20Sequence-d9901a" alt="4182・Fibonacci Sequence"/></a>
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04260-medium-nomiwase/README.md" target="_blank"><img src="https://img.shields.io/badge/-4260%E3%83%BBAllCombinations-d9901a" alt="4260・AllCombinations"/></a>
 
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04260-medium-nomiwase/README.md" target="_blank"><img src="https://img.shields.io/badge/-4260%E3%83%BBAllCombinations-d9901a" alt="4260・AllCombinations"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04425-medium-greater-than/README.md" target="_blank"><img src="https://img.shields.io/badge/-4425%E3%83%BBGreater%20Than-d9901a" alt="4425・Greater Than"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04471-medium-zip/README.md" target="_blank"><img src="https://img.shields.io/badge/-4471%E3%83%BBZip-d9901a" alt="4471・Zip"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04484-medium-istuple/README.md" target="_blank"><img src="https://img.shields.io/badge/-4484%E3%83%BBIsTuple-d9901a" alt="4484・IsTuple"/></a> 
