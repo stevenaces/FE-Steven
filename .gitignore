@@ -1,6 +1,7 @@
 .DS_Store
 .history
-
+package-lock.json
+node_modules
 TypeScript/tdl-ts/node_modules
 
 计算机网络/websocket/connected-demo/node_modules
