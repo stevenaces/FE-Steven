@@ -1,5 +1,11 @@
-import { useMapper } from "./useMapper";
+import { useMapper, createNamespaceHelpers } from "./useMapper";
 
-export function useGetters(mapper) {
-	return useMapper(mapper, "mapGetters");
+export function useState(mapper) {
+	let mapFn = mapState;
+
+	// 判断是否是其它模块
+	if (typeof moduleName === "string" && moduleName.length > 0) {
+		mapFn = createNamespaceHelpers(moduleName).mapState;
+	}
+	return useMapper(mapper, mapFn);
 }
