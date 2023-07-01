@@ -81,12 +81,12 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04182-medium-fibonacci-sequence/README.md" target="_blank"><img src="https://img.shields.io/badge/-4182%E3%83%BBFibonacci%20Sequence-d9901a" alt="4182・Fibonacci Sequence"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04260-medium-nomiwase/README.md" target="_blank"><img src="https://img.shields.io/badge/-4260%E3%83%BBAllCombinations-d9901a" alt="4260・AllCombinations"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04425-medium-greater-than/README.md" target="_blank"><img src="https://img.shields.io/badge/-4425%E3%83%BBGreater%20Than-d9901a" alt="4425・Greater Than"/></a>
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04471-medium-zip/README.md" target="_blank"><img src="https://img.shields.io/badge/-4471%E3%83%BBZip-d9901a" alt="4471・Zip"/></a> 
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04484-medium-istuple/README.md" target="_blank"><img src="https://img.shields.io/badge/-4484%E3%83%BBIsTuple-d9901a" alt="4484・IsTuple"/></a>
 
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04471-medium-zip/README.md" target="_blank"><img src="https://img.shields.io/badge/-4471%E3%83%BBZip-d9901a" alt="4471・Zip"/></a> 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04484-medium-istuple/README.md" target="_blank"><img src="https://img.shields.io/badge/-4484%E3%83%BBIsTuple-d9901a" alt="4484・IsTuple"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04499-medium-chunk/README.md" target="_blank"><img src="https://img.shields.io/badge/-4499%E3%83%BBChunk-d9901a" alt="4499・Chunk"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04803-medium-trim-right/README.md" target="_blank"><img src="https://img.shields.io/badge/-4803%E3%83%BBTrim%20Right-d9901a" alt="4803・Trim Right"/></a> 
