@@ -25,5 +25,16 @@ type Chunk<
 	: Tmp extends []
 	? Res
 	: [...Res, Tmp];
-
+/* https://github.com/type-challenges/type-challenges/issues/4513 */
+// type Chunk<
+// 	T extends any[],
+// 	N extends number,
+// 	Swap extends any[] = []
+// > = Swap["length"] extends N
+// 	? [Swap, ...Chunk<T, N>]
+// 	: T extends [infer K, ...infer L]
+// 	? Chunk<L, N, [...Swap, K]>
+// 	: Swap extends []
+// 	? Swap
+// 	: [Swap];
 export { Chunk };
