@@ -89,6 +89,7 @@
 
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
+
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05140-medium-trunc/README.md" target="_blank"><img src="https://img.shields.io/badge/-5140%E3%83%BBTrunc-d9901a" alt="5140・Trunc"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05153-medium-indexof/README.md" target="_blank"><img src="https://img.shields.io/badge/-5153%E3%83%BBIndexOf-d9901a" alt="5153・IndexOf"/></a> 
