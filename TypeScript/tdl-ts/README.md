@@ -86,13 +86,12 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04499-medium-chunk/README.md" target="_blank"><img src="https://img.shields.io/badge/-4499%E3%83%BBChunk-d9901a" alt="4499・Chunk"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04803-medium-trim-right/README.md" target="_blank"><img src="https://img.shields.io/badge/-4803%E3%83%BBTrim%20Right-d9901a" alt="4803・Trim Right"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05117-medium-without/README.md" target="_blank"><img src="https://img.shields.io/badge/-5117%E3%83%BBWithout-d9901a" alt="5117・Without"/></a>
-
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05140-medium-trunc/README.md" target="_blank"><img src="https://img.shields.io/badge/-5140%E3%83%BBTrunc-d9901a" alt="5140・Trunc"/></a> 
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05153-medium-indexof/README.md" target="_blank"><img src="https://img.shields.io/badge/-5153%E3%83%BBIndexOf-d9901a" alt="5153・IndexOf"/></a> 
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a> 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05140-medium-trunc/README.md" target="_blank"><img src="https://img.shields.io/badge/-5140%E3%83%BBTrunc-d9901a" alt="5140・Trunc"/></a> 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05153-medium-indexof/README.md" target="_blank"><img src="https://img.shields.io/badge/-5153%E3%83%BBIndexOf-d9901a" alt="5153・IndexOf"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05310-medium-join/README.md" target="_blank"><img src="https://img.shields.io/badge/-5310%E3%83%BBJoin-d9901a" alt="5310・Join"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05317-medium-lastindexof/README.md" target="_blank"><img src="https://img.shields.io/badge/-5317%E3%83%BBLastIndexOf-d9901a" alt="5317・LastIndexOf"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05360-medium-unique/README.md" target="_blank"><img src="https://img.shields.io/badge/-5360%E3%83%BBUnique-d9901a" alt="5360・Unique"/></a> 
