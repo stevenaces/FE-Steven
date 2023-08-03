@@ -90,12 +90,12 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05153-medium-indexof/README.md" target="_blank"><img src="https://img.shields.io/badge/-5153%E3%83%BBIndexOf-d9901a" alt="5153・IndexOf"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05310-medium-join/README.md" target="_blank"><img src="https://img.shields.io/badge/-5310%E3%83%BBJoin-d9901a" alt="5310・Join"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05317-medium-lastindexof/README.md" target="_blank"><img src="https://img.shields.io/badge/-5317%E3%83%BBLastIndexOf-d9901a" alt="5317・LastIndexOf"/></a> 
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05360-medium-unique/README.md" target="_blank"><img src="https://img.shields.io/badge/-5360%E3%83%BBUnique-d9901a" alt="5360・Unique"/></a> 
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05821-medium-maptypes/README.md" target="_blank"><img src="https://img.shields.io/badge/-5821%E3%83%BBMapTypes-d9901a" alt="5821・MapTypes"/></a>
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a> 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05360-medium-unique/README.md" target="_blank"><img src="https://img.shields.io/badge/-5360%E3%83%BBUnique-d9901a" alt="5360・Unique"/></a> 
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/05821-medium-maptypes/README.md" target="_blank"><img src="https://img.shields.io/badge/-5821%E3%83%BBMapTypes-d9901a" alt="5821・MapTypes"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/07544-medium-construct-tuple/README.md" target="_blank"><img src="https://img.shields.io/badge/-7544%E3%83%BBConstruct%20Tuple-d9901a" alt="7544・Construct Tuple"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/08640-medium-number-range/README.md" target="_blank"><img src="https://img.shields.io/badge/-8640%E3%83%BBNumber%20Range-d9901a" alt="8640・Number Range"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/08767-medium-combination/README.md" target="_blank"><img src="https://img.shields.io/badge/-8767%E3%83%BBCombination-d9901a" alt="8767・Combination"/></a> 
