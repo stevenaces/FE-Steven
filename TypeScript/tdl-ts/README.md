@@ -98,7 +98,6 @@
 >  Trying by **order**...
 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a> 
-
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/08767-medium-combination/README.md" target="_blank"><img src="https://img.shields.io/badge/-8767%E3%83%BBCombination-d9901a" alt="8767・Combination"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/08987-medium-subsequence/README.md" target="_blank"><img src="https://img.shields.io/badge/-8987%E3%83%BBSubsequence-d9901a" alt="8987・Subsequence"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/09142-medium-checkrepeatedchars/README.md" target="_blank"><img src="https://img.shields.io/badge/-9142%E3%83%BBCheckRepeatedChars-d9901a" alt="9142・CheckRepeatedChars"/></a> 
