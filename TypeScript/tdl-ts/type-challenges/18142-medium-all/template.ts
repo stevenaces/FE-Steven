@@ -9,6 +9,9 @@ import type { Equal } from "@type-challenges/utils";
 //   : true
 
 // my solution 2
-type All<T extends unknown[], Target, U = T[number]> = Equal<U, Target>
+// type All<T extends unknown[], Target, U = T[number]> = Equal<U, Target>
+
+// optimal
+type All<T extends unknown[], Target> = Equal<T[number], Target>
 
 export { All };
