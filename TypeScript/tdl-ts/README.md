@@ -103,12 +103,12 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/10969-medium-integer/README.md" target="_blank"><img src="https://img.shields.io/badge/-10969%E3%83%BBInteger-d9901a" alt="10969・Integer"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/16259-medium-to-primitive/README.md" target="_blank"><img src="https://img.shields.io/badge/-16259%E3%83%BBToPrimitive-d9901a" alt="16259・ToPrimitive"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/17973-medium-deepmutable/README.md" target="_blank"><img src="https://img.shields.io/badge/-17973%E3%83%BBDeepMutable-d9901a" alt="17973・DeepMutable"/></a>
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/18142-medium-all/README.md" target="_blank"><img src="https://img.shields.io/badge/-18142%E3%83%BBAll-d9901a" alt="18142・All"/></a> 
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/18142-medium-all/README.md" target="_blank"><img src="https://img.shields.io/badge/-18142%E3%83%BBAll-d9901a" alt="18142・All"/></a>
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/18220-medium-filter/README.md" target="_blank"><img src="https://img.shields.io/badge/-18220%E3%83%BBFilter-d9901a" alt="18220・Filter"/></a>
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a>
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/18220-medium-filter/README.md" target="_blank"><img src="https://img.shields.io/badge/-18220%E3%83%BBFilter-d9901a" alt="18220・Filter"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/21106-medium-zu-he-jian-lei-xing-combination-key-type/README.md" target="_blank"><img src="https://img.shields.io/badge/-21106%E3%83%BBCombination%20key%20type-d9901a" alt="21106・Combination key type"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/25170-medium-replace-first/README.md" target="_blank"><img src="https://img.shields.io/badge/-25170%E3%83%BBReplace%20First-d9901a" alt="25170・Replace First"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/25270-medium-transpose/README.md" target="_blank"><img src="https://img.shields.io/badge/-25270%E3%83%BBTranspose-d9901a" alt="25270・Transpose"/></a> 
