@@ -111,13 +111,13 @@
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/27152-medium-triangular-number/README.md" target="_blank"><img src="https://img.shields.io/badge/-27152%E3%83%BBTriangular%20number-d9901a" alt="27152・Triangular number"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/27862-medium-cartesianproduct/README.md" target="_blank"><img src="https://img.shields.io/badge/-27862%E3%83%BBCartesianProduct-d9901a" alt="27862・CartesianProduct"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/27932-medium-mergeall/README.md" target="_blank"><img src="https://img.shields.io/badge/-27932%E3%83%BBMergeAll-d9901a" alt="27932・MergeAll"/></a>
+<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/27958-medium-checkrepeatedtuple/README.md" target="_blank"><img src="https://img.shields.io/badge/-27958%E3%83%BBCheckRepeatedTuple-d9901a" alt="27958・CheckRepeatedTuple"/></a>
 ## 🤔 UnPassed Challenges
 >  Trying by **order**...
 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/04518-medium-fill/README.md" target="_blank"><img src="https://img.shields.io/badge/-4518%E3%83%BBFill-d9901a" alt="4518・Fill"/></a>
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/25270-medium-transpose/README.md" target="_blank"><img src="https://img.shields.io/badge/-25270%E3%83%BBTranspose-d9901a" alt="25270・Transpose"/></a> 
 <a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/26401-medium-json-schema-to-typescript/README.md" target="_blank"><img src="https://img.shields.io/badge/-26401%E3%83%BBJSON%20Schema%20to%20TypeScript-d9901a" alt="26401・JSON Schema to TypeScript"/></a>
-<a href="https://github.com/type-challenges/type-challenges/blob/main/questions/questions/27958-medium-checkrepeatedtuple/README.md" target="_blank"><img src="https://img.shields.io/badge/-27958%E3%83%BBCheckRepeatedTuple-d9901a" alt="27958・CheckRepeatedTuple"/></a>
 
 <!-- hard -->
 <img src="https://img.shields.io/badge/hard-45-de3d37" alt="45"/><br>
